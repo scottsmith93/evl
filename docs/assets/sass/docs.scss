@@ -1,109 +1,119 @@
-// NHS.UK frontend library
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
 
-// ==========================================================================
-// FRONTEND STYLE ADJUSTMENTS
-// ==========================================================================
+@import "node_modules/govuk-frontend/govuk/all";
 
-// Body background white
-.nhsuk-body-white {
-  background-color: $color_nhsuk-white;
+img{
+  max-width: 100%;
 }
 
-// Body background grey
-.nhsuk-body-grey {
-  background-color: $color_nhsuk-grey-5;
+// adjust code block font-size to 19px
+.hljs {
+  font-size: 19px;
+  line-height: 25px;
 }
 
-// Header adjustment
-//
-// Fix for service header with a short name
-.nhsuk-header__link--service-short-name {
-  -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  margin-bottom: 0;
+.app-table--fixed {
+  table-layout: fixed;
 }
 
-.nhsuk-header__service-name {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 0;
+.app-\!-db {
+  display: block !important;
 }
 
-// Button
-//
-// Tweaked button spacing
-.nhsuk-button {
-  margin-top: nhsuk-spacing(2);
-
-  @include mq($from: desktop) {
-    padding: nhsuk-spacing(2) nhsuk-spacing(3);
-  }
+.app-table--fixed {
+  table-layout: fixed;
 }
 
-// Footer
-//
-// A modifier to have the footer links in 3 columns
-@include mq($from: desktop) {
-  .nhsuk-footer__list--three-columns{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: nhsuk-spacing(4);
-    -moz-column-gap: nhsuk-spacing(4);
-    column-gap: nhsuk-spacing(4);
-  }
+.app-\!-db {
+  display: block !important;
 }
 
-// ==========================================================================
-// PROTOTYPE SPECIFIC STYLES
-// ==========================================================================
-
-// Overrides auto reload div background colour
-#hc_extension_bkgnd {
-  background-color: $color_nhsuk-grey-4 !important;
-}
-
-// <pre> and <code> tag styles
-.app-pre {
-  @include nhsuk-responsive-margin(4, "bottom");
-
-  background: $color_nhsuk-white;
-  border: 1px solid $nhsuk-border-color;
-  overflow: auto;
-  margin-top: 0;
-  padding: nhsuk-spacing(3);
+.app-code {
+  font-size: 16px;
   position: relative;
+  margin: 0;
+  padding: govuk-spacing(3);
+  overflow: auto;
+  border: 1px solid $govuk-border-colour;
+  background-color: govuk-colour("light-grey", $legacy: "grey-4");
+  max-width: 38em;
+  @include govuk-responsive-margin(5, "bottom");
 }
 
-li .app-code,
-p .app-code {
-  background: $color_nhsuk-white;
-  border: 1px solid $nhsuk-border-color;
-  padding: nhsuk-spacing(1) nhsuk-spacing(3);
-  font-size: 0.8em;
+.app-prose-scope {
+
+  h1 {
+    @extend %govuk-heading-xl;
+  }
+
+  h2 {
+    @extend %govuk-heading-l;
+  }
+
+  h3 {
+    @extend %govuk-heading-m;
+  }
+
+  h4 {
+    @extend %govuk-heading-s;
+  }
+
+  p {
+    @extend %govuk-body-m;
+  }
+
+  strong,
+  b {
+    @include govuk-typography-weight-bold;
+  }
+
+  ul,
+  ol {
+    @extend %govuk-list;
+  }
+
+  ol {
+    @extend %govuk-list--number;
+  }
+
+  ul {
+    @extend %govuk-list--bullet;
+  }
+
+  a {
+    @extend %govuk-link;
+  }
+
+  hr {
+    @extend %govuk-section-break;
+    @extend %govuk-section-break--visible;
+    @extend %govuk-section-break--xl;
+  }
+
+  pre {
+    @extend .app-code;
+  }
+
+  p code,
+  li code {
+    color: #d13118;
+    background-color: govuk-colour("light-grey", $legacy: "grey-4");
+    padding: 0 govuk-spacing(1);
+  }
+
+  // TODO: Blockquotes are likely the most semantic element to be using, update to use the inset component directly.
+  blockquote {
+    margin-left: 0;
+    @extend .govuk-inset-text;
+  }
 }
 
-.nhsuk-expander .app-pre,
-.nhsuk-expander p .app-code,
-.nhsuk-expander li .app-code {
-  background: $color_nhsuk-grey-5;
-  border: 1px solid $color_nhsuk-grey-4;
-}
-
-// Installation guide screenshots
-.app-img-guide {
-  width: 100%;
-}
-
-// Table hotfix
-
-.nhsuk-table__body .nhsuk-table__cell {
-  vertical-align: top;
-}
-
-.nhsuk-table__header,
-.nhsuk-table__cell {
-  padding: 16px 16px 16px 0;
+.app-prose-scope ul + h2,
+.app-prose-scope ul + h3,
+.app-prose-scope ul + h4,
+.app-prose-scope pre + h2,
+.app-prose-scope pre + h3,
+.app-prose-scope pre + h4 {
+  @include govuk-responsive-margin(4, "top");
 }

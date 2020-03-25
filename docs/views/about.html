@@ -1,59 +1,102 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  About - NHS.UK prototype kit
+About - GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
-  {{ breadcrumb({
-    href: "/docs",
-    text: "Home"
-  }) }}
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "GOV.UK Prototype Kit",
+	      href: "/docs"
+	    }
+	  ]
+	}) }}
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">About</h1>
 
-      <h1>About</h1>
+      <p class="govuk-body-l">
+        The GOV.UK Prototype Kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research
+      </p>
       
-      <p class="nhsuk-lede-text">The NHS.UK prototype kit enables you to make interactive prototypes that will look like pages on NHS.UK. The prototypes you make are a great way to show ideas to others and for conducting user research.</p>
-
-      <h2>Support</h2>
+      <h2 class="govuk-heading-m">Support</h2>
       
-      <p>The NHS.UK prototype kit is maintained by NHS Digital. If you’ve got a question or need support you can:</p>
-
-      <ul>
-        <li><a href="mailto:service-manual@nhs.net?subject=NHS.UK prototype kit - About">email us</a></li>
-        <li><a href="https://nhsuk.slack.com/messages/standards" rel="nofollow">get in touch on the NHS.UK #standards Slack channel</a></li>
-        <li><a href="https://github.com/nhsuk/nhsuk-prototype-kit/issues">view known issues on GitHub</a></li>
+      <p>The GOV.UK Prototype Kit is maintained by the Government Digital Service. If you’ve got a question or need support you can:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>email 
+          <a href="mailto:govuk-design-system-support@digital.cabinet-office.gov.uk" class="govuk-link">
+            govuk-design-system-support@digital.cabinet-office.gov.uk
+          </a>
+        </li>
+        <li>
+          <a href="https://ukgovernmentdigital.slack.com/messages/prototype-kit" class="govuk-link">
+            get in touch on Slack
+          </a> 
+          (<a class="govuk-link" href="slack://channel?team=T04V6EBTR&amp;id=C0647LW4R">open in app</a>)
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk-prototype-kit/issues" class="govuk-link">
+            view known issues on GitHub
+          </a>
+        </li>
       </ul>
-      
-      <h2>Contributing</h2>
-      
-      <p>The prototype kit is always evolving as we learn more. Help us to improve and grow it:</p>
 
-      <ul>
-        <li><a href="https://nhs-service-manual.slack.com/messages/CFYL2GDGW" rel="nofollow">get in touch on the NHS.UK #standards Slack channel</a></li>
-        <li><a href="https://github.com/nhsuk/nhsuk-prototype-kit/issues">create a GitHub issue</a></li>
+      <h2 class="govuk-heading-m">Contributing</h2>
+      
+      <p>If you’ve got an idea or suggestion you can:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="https://ukgovernmentdigital.slack.com/messages/prototype-kit-dev" class="govuk-link">
+            get in touch on the developer Slack channel
+          </a> 
+          (<a class="govuk-link" href="slack://channel?team=T04V6EBTR&amp;id=C0E1063DW">open in app</a>)
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk-prototype-kit/issues" class="govuk-link">
+            create a GitHub issue
+          </a>
+        </li>
       </ul>
 
-      <h2>Privacy</h2>
+      <h2 class="govuk-heading-m">Principles</h2>
 
-      <p>You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like NHS.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.</p>
+      <p>The GOV.UK Prototype Kit:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>is designed for prototyping, not for production code</li>
+        <li>requires minimal skills to get started: HTML, CSS</li>
+        <li>should be fully documented in a way that is accessible to the target audience</li>
+        <li>
+          makes use of <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Frontend</a>
+        </li>
+        <li>allows for server-side code</li>
+        <li>can be extended - for example using NPM to install a module, access datastores, etc</li>
+        <li>makes it easy to share prototypes with others online</li>
 
-      <h2>The kit is not a production framework</h2>
-     
-      <p>Things made with the kit may look like NHS.UK, but do not have production code and likely aren't fully accessible. Don't use the kit as a base for a production service.</p>
+      </ul>
 
-      {{ backLink({
-        "href": "/docs",
-        "text": "Back to Home",
-        "classes": "nhsuk-u-margin-top-7"
-      }) }}
+
+      <h2 class="govuk-heading-m">Privacy</h2>
+
+
+      <p>You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like GOV.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.</p>
+
+
+
+      <h2 class="govuk-heading-m">The kit is not a production framework</h2>
+
+      <p>Things made with the kit may look like GOV.UK, but do not have production code and likely aren't fully accessible. Don't use the kit as a base for a production service.</p>
 
     </div>
 
+
   </div>
+
+
+
 {% endblock %}

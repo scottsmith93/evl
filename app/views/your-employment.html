@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/your-details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/location">
+
+      {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+      {{ govukCheckboxes({
+        idPrefix: "current-job-status",
+        name: "current-job",
+        fieldset: {
+          legend: {
+            text: "What is your current job status?",
+            isPageHeading: false,
+            classes: "govuk-fieldset__legend--xl"
+          }
+        },
+        hint: {
+          text: "Select all that apply."
+        },
+        items: [
+          {
+            value: "employed",
+            text: "Employed"
+          },
+          {
+            value: "selfemployed",
+            text: "Self-employed"
+          },
+          {
+            value: "Retired",
+            text: "Retired"
+          },
+          {
+            value: "Unemployed",
+            text: "Unemployed"
+          }
+        ]
+      }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
