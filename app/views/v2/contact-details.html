@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/your-details">Back</a>
+  <a class="govuk-back-link" href="placement-start">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -13,46 +13,38 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Your contact details</h1>
+      <form class="form" action="check-your-answers">
 
-      <form class="form" action="/location">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Provide your contact details
+              </h1>
+            </legend>
+           
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="width-20">
+                Email address
+              </label>
+              <span id="account-number-hint" class="govuk-hint">
+                Your certificate will be sent to this email
+              </span>
+              <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+            </div>
 
-        {% from "govuk/components/input/macro.njk" import govukInput %}
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="width-20">
+                Phone number (optional)
+              </label>
+              <span id="account-number-hint" class="govuk-hint">
+                The organisation may need to contact you about the placement
+              </span>
+              <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+            </div>
 
-        {{ govukInput({
-          label: {
-            text: "Telephone number"
-          },
-          hint: {
-            text: "We’ll only contact you about payments information."
-          },
-          id: "telephone",
-          name: "telephone",
-          type: "Telephone",
-          autocomplete: "telephone",
-          attributes: {
-            spellcheck: "false"
-          }
-        }) }}
-
-      {% from "govuk/components/input/macro.njk" import govukInput %}
-
-      {{ govukInput({
-        label: {
-          text: "Email address"
-        },
-        hint: {
-          text: "We’ll only use this to send you confirmation."
-        },
-        id: "email",
-        name: "email",
-        type: "email",
-        autocomplete: "email",
-        attributes: {
-          spellcheck: "false"
-        }
-      }) }}
-
+          </fieldset>
+        </div>
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
       </form>
