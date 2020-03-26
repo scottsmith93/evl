@@ -13,22 +13,49 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      {% from "govuk/components/date-input/macro.njk" import govukDateInput %}
 
-      {{ govukDateInput({
-        id: "placement-start",
-        namePrefix: "placement-start",
-        fieldset: {
-          legend: {
-            text: "When do you plan to start the placement?",
-            isPageHeading: true,
-            classes: "govuk-fieldset__legend--xl"
-          }
-        },
-        hint: {
-          text: "For example, 12 11 2018"
-        }
-      }) }}
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              When do you plan to start the placement?
+            </h1>
+          </legend>
+          <p>
+            If you don't know the exact start date, you can provide an approximate date
+          </p>
+          <span id="passport-issued-hint" class="govuk-hint">
+            For example, 12 11 2007
+          </span>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
 
       <form class="form" action="contact-details" method="post">
 
