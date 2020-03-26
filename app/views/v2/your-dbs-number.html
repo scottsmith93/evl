@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="your-details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="provide-dbs-number">
+
+        {{ govukRadios({
+          idPrefix: "provide-dbs-number",
+          name: "provide-dbs-number",
+          fieldset: {
+            legend: {
+              text: "Do you know your DBS Certificate number?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--xl"
+            }
+          },
+          hint: {
+            text: "Providing your DBS certificate number now will...."
+          },
+          items: [
+            {
+              value: "dbs-yes",
+              text: "Yes"
+            },
+            {
+              value: "dbs-no",
+              text: "No"
+            }
+          ]
+        }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

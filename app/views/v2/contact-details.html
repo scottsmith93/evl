@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/your-details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Your contact details</h1>
+
+      <form class="form" action="/location">
+
+        {% from "govuk/components/input/macro.njk" import govukInput %}
+
+        {{ govukInput({
+          label: {
+            text: "Telephone number"
+          },
+          hint: {
+            text: "We’ll only contact you about payments information."
+          },
+          id: "telephone",
+          name: "telephone",
+          type: "Telephone",
+          autocomplete: "telephone",
+          attributes: {
+            spellcheck: "false"
+          }
+        }) }}
+
+      {% from "govuk/components/input/macro.njk" import govukInput %}
+
+      {{ govukInput({
+        label: {
+          text: "Email address"
+        },
+        hint: {
+          text: "We’ll only use this to send you confirmation."
+        },
+        id: "email",
+        name: "email",
+        type: "email",
+        autocomplete: "email",
+        attributes: {
+          spellcheck: "false"
+        }
+      }) }}
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

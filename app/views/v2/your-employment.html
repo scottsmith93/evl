@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/placement-details">Back</a>
+  <a class="govuk-back-link" href="provide-dbs-number">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -13,35 +13,41 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <form class="form" action="location">
+
+      
+
       {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
       {{ govukRadios({
-        idPrefix: "placement-duration",
-        name: "placement-duration",
+        idPrefix: "current-job-status",
+        name: "current-job",
         fieldset: {
           legend: {
-            text: "How long will the placement last?",
+            text: "What is your current job status?",
             isPageHeading: true,
             classes: "govuk-fieldset__legend--xl"
           }
         },
         items: [
-          {
-            value: "two weeks",
-            text: "Two weeks"
-          },
-          {
-            value: "three weeks",
-            text: "Three weeks"
-          },
-          {
-            value: "four weeks",
-            text: "Four weeks"
-          }
-        ]
+        {
+          value: "employed",
+          text: "Employed"
+        },
+        {
+          value: "selfemployed",
+          text: "Self-employed"
+        },
+        {
+          value: "Retired",
+          text: "Retired"
+        },
+        {
+          value: "Unemployed",
+          text: "Unemployed"
+        }
+      ]
       }) }}
-
-      <form class="form" action="/placement-start" method="post">
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 

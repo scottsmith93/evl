@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/location">Back</a>
+  <a class="govuk-back-link" href="location">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -13,17 +13,17 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">The volunteer placement</h1>
+      <h1 class="govuk-heading-xl">Tell us about the volunteer placement.</h1>
 
-      <p>Tell us about the volunteer placement.
-      <p>
+   
 
         {% from "govuk/components/input/macro.njk" import govukInput %}
 
         {{ govukInput({
           label: {
-            text: "Tell us about the organisation you are applying to volunteer for?"
+            text: "What is the name of the organisation you are applying to volunteer for?"
           },
+          classes: "govuk-input--width-20",
           id: "organisation-name",
           name: "organisation-name"
         }) }}
@@ -32,6 +32,7 @@
           label: {
             text: "Who is the named contact for this role?"
           },
+          classes: "govuk-input--width-20",
           id: "organisation-contact-name",
           name: "organisation-contact-name"
         }) }}
@@ -40,6 +41,7 @@
           label: {
             text: "What is their email address?"
           },
+          classes: "govuk-input--width-20",
           id: "organisation-email",
           name: "organisation-email"
         }) }}
@@ -49,6 +51,7 @@
           label: {
             text: "What is the postal address of the organisation?"
           },
+          classes: "govuk-input--width-20",
           id: "organisation-postal-address",
           name: "organisation-postal-address"
         }) }}
@@ -58,13 +61,13 @@
           label: {
             text: "What is their telephone number?"
           },
+          classes: "govuk-input--width-20",
           id: "organisation-telephone",
           name: "organisation-telephone"
         }) }}
 
-        {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
-      <form class="form" action="/placement-information" method="post">
+      <form class="form" action="placement-information" method="post">
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
