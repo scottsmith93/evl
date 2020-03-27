@@ -1,0 +1,192 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check volunteer details
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="location">Back to where?</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-xl">Check volunteer and provider information</h1>
+
+      <h2 class="govuk-heading-l">Volunteer details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sarah Philips
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            National Insurance Number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            JX 03 14 01 B
+          </dd>
+         
+        </div>
+     <!--  <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            DBS Certificate number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            189276890009
+          </dd>
+         
+        </div> --> 
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Job status
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Unemployed
+          </dd>
+         
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7 Crighton
+            <br>Oxclose
+            <br>Washington
+            <br>Tyne and Wear
+            <br>NE31 9PS
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Contact details
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p>07700 900457</p>
+            <p>sarah.phillips@gmail.com</p>
+          </dd>
+          
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">Provider details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name of organisation
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Birtley Care Home
+          </dd>
+          
+        </div>
+
+   <!--   <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Named contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Patricia Sewell
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            p.sewell@bch.co.uk
+          </dd>
+         
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Telephone number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            0191 4311 765
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Durham Rd
+            <br>Birtley
+            <br>Chester-le-Street
+            <br>DH3 1LU
+          </dd>
+          
+        </div>-->  
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Placement length
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Four weeks
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Planned start date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            16 04 2020
+          </dd>
+          
+        </div>
+      </dl>
+      <h3 class="govuk-heading-m">The provider declared the following:</h3>
+
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked disabled>
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I have checked they have the right experience for the role
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked disabled>
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            I have or I will check they are eligible to work (checked DBS)
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked disabled>
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            This is a real placement that we need to fill
+          </label>
+        </div>
+       
+      </div>
+
+      <form action="your-details" method="post" novalidate>
+<br>
+<br>
+<br>
+        <input type="hidden" name="answers-checked" value="true">
+
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Accept information
+        </button>
+
+      <!-- <p><a href="rejected">Reject</a></p> --> 
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
