@@ -21,7 +21,16 @@
 
       {{ govukInput({
         label: {
-          text: "What is your full name?"
+          text: "First name"
+        },
+        classes: "govuk-input--width-20",
+        id: "individual-name",
+        name: "individual-name"
+      }) }}
+
+      {{ govukInput({
+        label: {
+          text: "Last name"
         },
         classes: "govuk-input--width-20",
         id: "individual-name",
