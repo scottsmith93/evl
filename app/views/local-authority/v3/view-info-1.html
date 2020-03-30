@@ -12,7 +12,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-xl">Check volunteer and provider information</h1>
+      <h1 class="govuk-heading-xl">Confirm or deny Emergency Volunteering Scheme certification</h1>
 
       <h2 class="govuk-heading-l">Volunteer details</h2>
 
@@ -150,27 +150,52 @@
           
         </div>
       </dl>
-      <h3 class="govuk-heading-m">The provider declared the following:</h3>
+      <h3 class="govuk-heading-m">The provider has declared that they:</h3>
 
       <div class="govuk-checkboxes">
         <div class="govuk-checkboxes__item">
           <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked disabled>
           <label class="govuk-label govuk-checkboxes__label" for="waste">
-            I confirm that Sarah has the necessary skills or experience for the placement
+            have checked the applicant has the right experience for the role
           </label>
         </div>
         <div class="govuk-checkboxes__item">
           <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked disabled>
           <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-            I confirm that Sarah has a recent DBS certificate
+            have or will check the applicant is eligible to work (checked DBS)
           </label>
         </div>
         <div class="govuk-checkboxes__item">
           <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked disabled>
           <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-            I can confirm this is a real placement and that the organisation I work for requires support for this placement
+            confirm that this is a real placement that they need to fill          
           </label>
         </div>
+       
+      </div>
+
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <h3 class="govuk-heading-m">I confirm the following statement:</h3>
+
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            that the health and social care service provider has indemnity insurance
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            that I have approved this application and the volunteer can begin the placement
+          </label>
+        </div>
+       
        
       </div>
 
@@ -183,6 +208,8 @@
         <button type="submit" class="govuk-button" data-module="govuk-button">
           Accept information
         </button>
+
+        <p><a href="rejected">Reject information</a></p>
 
       <!-- <p><a href="rejected">Reject</a></p> --> 
       </form>
