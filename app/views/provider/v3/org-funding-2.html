@@ -13,23 +13,23 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Confirm your local authority or health authority      </h1>
+      <h1 class="govuk-heading-xl">Tell us who the relevant local authority or health authority is</h1>
 
-      <p>Before a volunteer can begin their placement, the application needs to be certified by the relevant local authority or health authority of your organisation.</p>
+      <p>Before a volunteer can begin their placement, their application needs to be certified. If they are providing social care services they will be certified by the relevant local authority, if health services they will be certified by the relevant clinical commissioning group.      </p>
       
-      <p class="govuk-body">If the organisation you work for:</p>
+  <!--   <p class="govuk-body">If the organisation you work for:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>provides social care, then you report to the local authority</li>
           <li>provides healthcare, then you report to your Clinical Commission Group</li>
         </ul>
       
-        <p>If you are unsure then please choose a relevant local authority.</p>
+        <p>If you are unsure then please choose a relevant local authority.</p> --> 
 
       <form class="form" action="confirmation">
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="event-name">
-            Name of relevant local authority or health authority
+            Name of your relevant local authority or clinical commissioning group
           </label>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
@@ -41,9 +41,9 @@
         name: "dbs-certificate-number"
       }) }} -->
 
-      <p>When you submit this information, a point of contact within the relevant authority will be asked to verify the placement.</p>
+      <p>When you submit this information, a point of contact within the relevant organisation will be asked to verify the placement.</p>
 
-        <button class="govuk-button" data-module="govuk-button">Send application to be verified</button>
+        <button class="govuk-button" data-module="govuk-button">Send application to be certified</button>
 
       </form>
 
