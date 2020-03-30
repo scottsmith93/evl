@@ -13,74 +13,115 @@
         Apply for Emergency Volunteering Leave
         
       </h1>
-      <p class="govuk-lede">
-        These prototypes have been assembled very quick and are a communication tool which demonstrates a current understanding of how things work.
-      </p>
+        <p class="govuk-lede">
+          These prototypes have been assembled very quick and are a communication tool which demonstrates a current understanding of how things work.
+        </p>
 
-      <hr>
-      <br>
-      <h2 class="govuk-heading-l">Local authority approving volunteer and provider info</h2>
-      <p>Work in progress</p>
+          <hr>
+          <br>
+
+          <h2 class="govuk-heading-l">Full journey v3</h2>
+          <ol class="govuk-list govuk-list--number">
+            <li><p><a href="v3/start">Volunteer applying for Emergency Volunteering Leave</a>
+              
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Thinking: 26th March 2020
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <h3>Page 1 - Start page</h3>   
+                  <p>We'd like to take a closer look at the content for both the start and confirmation page. Feel it's good enough to put infront of some potential users.</p>     
+                  <h3>Page 2 - Tell us about you</h3>   
+                  <p>Full name and national insurance number are the unique identifiers to an individual</p>
+                  <h3>Page 3 - DBS certificate number</h3>   
+                  <p>Yes and no options for this. Thinking is that we don't want to stop somebody making an application if they don't know where to locate their number. Need clarification on the requirement on this.</p>
+                  <p>Do we need to state that you <strong>must</strong> have a DBS number to start placement?</p>
+                  <h3>Page 4 - Current job status</h3>
+                  <p>Where does this information go to? Is it an essential question for receiving a certificate? May need an option to cover "unemployed and recieving benefits"</p>
+                  <h3>Page 5 - Your address</h3>
+                  <p>Should only use this pattern if we know that addresses entered here will be based in the UK. Need clarity if this is the case.</p>
+                  <h3>Page 6 - placement details</h3>
+                  <p>Changed the input field from "postal address" which was one input filed and used the same address pattern we use to ask the volunteer for their address. Consistency.</p>
+                  <h3>Page 7 - Placement duration</h3>
+                  <p>Is it essential the answer to this question is correct? What if, after this transaction, what if the placement changes the start date?</p>
+                  <h3>Page 8 - Placement start</h3>
+                  <p>Telling the volunteer that you can provide an approximate date if they haven't been informed of a definite start date. Need to check requirements about this.</p>
+                  <h3>Page 9 - Volunteer contact details</h3>
+                  <p>Providing guidance as to why we're asking for these details.</p>
+                  <h3>Page 10 - Check answers</h3>
+                  <p>Standard CYA page</p>
+                  <h3>Page 11 - Confirmation</h3>
+                  <p>Need clear guidance what happens and work with content to provide more concrete content and design.</p>
+                </div>
+              </details>
+            </li>
+  
+            <li><a href="email-provider">Email content for provider receiving email</a>
+
+            <li><a href="provider/v3/view-info-1">Provider checking volunteer information</a>
+
+            <li><a href="local-authority/v3/view-info-1">Local authority approving volunteer and provider info</a>
+
+          </ol>
+<br>
+<hr>
+<br>
+
+          <h2 class="govuk-heading-l">Full journey v2</h2>
+            <ol class="govuk-list govuk-list--number">
+              <li><p><a href="v2/start">Volunteer applying for Emergency Volunteering Leave</a>
+                
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Thinking: 26th March 2020
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    <h3>Page 1 - Start page</h3>   
+                    <p>We'd like to take a closer look at the content for both the start and confirmation page. Feel it's good enough to put infront of some potential users.</p>     
+                    <h3>Page 2 - Tell us about you</h3>   
+                    <p>Full name and national insurance number are the unique identifiers to an individual</p>
+                    <h3>Page 3 - DBS certificate number</h3>   
+                    <p>Yes and no options for this. Thinking is that we don't want to stop somebody making an application if they don't know where to locate their number. Need clarification on the requirement on this.</p>
+                    <p>Do we need to state that you <strong>must</strong> have a DBS number to start placement?</p>
+                    <h3>Page 4 - Current job status</h3>
+                    <p>Where does this information go to? Is it an essential question for receiving a certificate? May need an option to cover "unemployed and recieving benefits"</p>
+                    <h3>Page 5 - Your address</h3>
+                    <p>Should only use this pattern if we know that addresses entered here will be based in the UK. Need clarity if this is the case.</p>
+                    <h3>Page 6 - placement details</h3>
+                    <p>Changed the input field from "postal address" which was one input filed and used the same address pattern we use to ask the volunteer for their address. Consistency.</p>
+                    <h3>Page 7 - Placement duration</h3>
+                    <p>Is it essential the answer to this question is correct? What if, after this transaction, what if the placement changes the start date?</p>
+                    <h3>Page 8 - Placement start</h3>
+                    <p>Telling the volunteer that you can provide an approximate date if they haven't been informed of a definite start date. Need to check requirements about this.</p>
+                    <h3>Page 9 - Volunteer contact details</h3>
+                    <p>Providing guidance as to why we're asking for these details.</p>
+                    <h3>Page 10 - Check answers</h3>
+                    <p>Standard CYA page</p>
+                    <h3>Page 11 - Confirmation</h3>
+                    <p>Need clear guidance what happens and work with content to provide more concrete content and design.</p>
+                  </div>
+                </details>
+              </li>
     
-        {{ govukButton({
-        text: "Start prototype",
-        href: "local-authority/view-info-1"
-      }) }}
-      <hr>
-      <h2 class="govuk-heading-l">Provider checking volunteer information</h2>
-      <p>Work in progress</p>
-    
-        {{ govukButton({
-        text: "Start prototype",
-        href: "provider/option-1/view-info-1"
-      }) }}
-      <hr>
-      <h2 class="govuk-heading-l">Apply for Emergency Volunteering Leave v2</h2>
-      <p>Work in progress</p>
-    
-        {{ govukButton({
-        text: "Start prototype",
-        href: "v2/start"
-      }) }}
+              <li><a href="provider/option-1/view-info-1">Provider checking volunteer information</a>
+
+              <li><a href="local-authority/view-info-1">Local authority approving volunteer and provider info</a>
+
+            </ol>
+
+
+<hr>
+<h2 class="govuk-heading-l">Journey v1</h2>
+
+      <p>Screens first provided Monday 23rd March</p>
       
+
       
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Thinking: 26th March 2020
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h3>Page 1 - Start page</h3>   
-          <p>We'd like to take a closer look at the content for both the start and confirmation page. Feel it's good enough to put infront of some potential users.</p>     
-          <h3>Page 2 - Tell us about you</h3>   
-          <p>Full name and national insurance number are the unique identifiers to an individual</p>
-          <h3>Page 3 - DBS certificate number</h3>   
-          <p>Yes and no options for this. Thinking is that we don't want to stop somebody making an application if they don't know where to locate their number. Need clarification on the requirement on this.</p>
-          <p>Do we need to state that you <strong>must</strong> have a DBS number to start placement?</p>
-          <h3>Page 4 - Current job status</h3>
-          <p>Where does this information go to? Is it an essential question for receiving a certificate? May need an option to cover "unemployed and recieving benefits"</p>
-          <h3>Page 5 - Your address</h3>
-          <p>Should only use this pattern if we know that addresses entered here will be based in the UK. Need clarity if this is the case.</p>
-          <h3>Page 6 - placement details</h3>
-          <p>Changed the input field from "postal address" which was one input filed and used the same address pattern we use to ask the volunteer for their address. Consistency.</p>
-          <h3>Page 7 - Placement duration</h3>
-          <p>Is it essential the answer to this question is correct? What if, after this transaction, what if the placement changes the start date?</p>
-          <h3>Page 8 - Placement start</h3>
-          <p>Telling the volunteer that you can provide an approximate date if they haven't been informed of a definite start date. Need to check requirements about this.</p>
-          <h3>Page 9 - Volunteer contact details</h3>
-          <p>Providing guidance as to why we're asking for these details.</p>
-          <h3>Page 10 - Check answers</h3>
-          <p>Standard CYA page</p>
-          <h3>Page 11 - Confirmation</h3>
-          <p>Need clear guidance what happens and work with content to provide more concrete content and design.</p>
-
-        </div>
-      </details>
-
-     <hr>
-     <p><a href="v1/start">Version 1 prototype</a><br>
+     <p><a href="v1/start">Prototype version 1 (only volunteer flow)</a><br>
      Version of prototype assembled by NHSX</p>
 
       
