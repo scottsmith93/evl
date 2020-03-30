@@ -13,13 +13,23 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Who funds you?</h1>
+      <h1 class="govuk-heading-xl">Confirm your local authority or health authority      </h1>
+
+      <p>Before an applicant can begin their placement, the application needs to be certified by the relevant local authority or health authority of your organisation.</p>
+      
+      <p class="govuk-body">If the organisation you work for:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>provide social care, you report to the local authority</li>
+          <li>provide healthcare then you report to the health authority</li>
+        </ul>
+      
+        <p>If you are unsure then please choose a relevant Local Authority.</p>
 
       <form class="form" action="confirmation">
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="event-name">
-            Enter the name of the organisation who provides your funding
+            Name of relevant local authority or health authority
           </label>
           <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
@@ -31,7 +41,9 @@
         name: "dbs-certificate-number"
       }) }} -->
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+      <p>When you submit this information, a point of contact within the relevant authority will be asked to verify the placement.</p>
+
+        <button class="govuk-button" data-module="govuk-button">Send application to be verified</button>
 
       </form>
 
