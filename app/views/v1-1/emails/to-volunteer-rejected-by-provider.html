@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index">Back</a>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+
+      <p><strong>Email Title: "Emergency Volunteering Leave application update" <strong></p>
+
+      <p>"Dear [Named contact from here],</p>
+      
+      <p>This is an update regarding your recent application for Emergency Volunteering Leave.</p>
+      
+      <p>Based on the information you’ve provided us there aren’t any suitable opportunities at the moment or we have seen an error in your application and cannot progress it at this time.</p>
+      
+      <p><strong>What happens next</strong></p>
+
+      <p>You can ask your original contact who you arranged your volunteering opportunity with about why this was rejected and if you should re-apply.</p>
+            
+      
+        <p>Best regards,
+          <br>Emergency Volunteering Scheme</p>
+      
+      
+
+    </div>
+  </div>
+{% endblock %}

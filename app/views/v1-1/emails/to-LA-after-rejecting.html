@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index">Back</a>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+
+      <p><strong>Title: [applicant name] Emergency Volunteering Leave rejected <strong></p>
+
+      <p>"Dear [LA-name]</p>
+      
+      <p>You rejected [provider-name]’s request for an Emergency Volunteering Scheme certification on behalf of [applicant-name].</p>
+      
+      <p><strong>What happens next</strong></p>
+      
+      <p>[provider-name] may contact you directly to find out why the application was rejected and ask if the applicant is able to re-apply."</p>
+
+
+
+      
+      
+
+    </div>
+  </div>
+{% endblock %}

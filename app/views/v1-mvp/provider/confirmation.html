@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Application sent</h1>
+        <div class="govuk-panel__body">
+          The application is now with <strong>[name of local authority/health authority selected]</strong> to be checked </div>
+      </div>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>Once [name of local authority/health authority selected] have checked the application they will either accept or decline it. If it is accepted, then you and the applicant will receive an email with the certificate.</p>
+      <p>The certificate allows the applicant to  begin their placement.</p>
+      <p>When the placement ends the applicant will be entitled to compensation. You can read more about compensation within our guidance for the Emergency Volunteering Scheme on <a href="#">GOV.UK</a>.</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

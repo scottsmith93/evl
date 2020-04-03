@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index">Back</a>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+
+      <p><strong>Title: [applicant name] Emergency Volunteering Scheme certificate<strong></p>
+
+      <p>"Dear [LA-name]</p>
+      
+      <p>Thank you for approving [provider-name]’s request for an Emergency Volunteering Scheme certificate on behalf of [applicant-name].</p>
+      
+      <p>You can view the certificate by clicking the link below:</p>
+      
+      <p><a href="#">Link to certifcate goes here</a>"</p>
+
+
+
+      
+      
+
+    </div>
+  </div>
+{% endblock %}
