@@ -1,0 +1,183 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check volunteer details
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="location">Back to where?</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-xl">Verify application for Emergency Volunteering Scheme</h1>
+
+      <h2 class="govuk-heading-m">Volunteer personal details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sarah Philips
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Contact details
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p>07700 900457</p>
+            <p>sarah.phillips@gmail.com</p>
+          </dd>
+          
+        </div>
+       
+     <!--  <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            DBS Certificate number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            189276890009
+          </dd>
+         
+        </div> --> 
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7 Crighton
+            <br>Oxclose
+            <br>Washington
+            <br>Tyne and Wear
+            <br>NE31 9PS
+          </dd>
+          
+        </div>
+       
+      </dl>
+
+      <h2 class="govuk-heading-m">Volunteer placement</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name of organisation
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Birtley Care Home
+          </dd>
+          
+        </div>
+   <!--   <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Named contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Patricia Sewell
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            p.sewell@bch.co.uk
+          </dd>
+         
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Telephone number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            0191 4311 765
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Durham Rd
+            <br>Birtley
+            <br>Chester-le-Street
+            <br>DH3 1LU
+          </dd>
+          
+        </div>-->  
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Placement length
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Four weeks
+          </dd>
+          
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Planned start date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            16 April 2020
+          </dd>
+          
+        </div>
+      </dl>
+
+     
+<br>
+      <p><strong>Please confirm the following statements:</strong></p>
+
+   <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            I confirm that I am authorised by my organisation to make these statements</label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I confirm that the organisation I work for has the correct indemnity arrangements to cover the volunteer during their placement</label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I confirm that Sarah has the necessary skills or experience for the placement
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            I confirm that Sarah has provided a valid DBS certificate, to the level required, in place for the duration of the placement
+          </label>
+        </div>
+      
+       
+      </div>
+
+      <form action="org-funding-2" method="post" novalidate>
+<br>
+<br>
+<br>
+        <input type="hidden" name="answers-checked" value="true">
+
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Verify application
+        </button>
+
+        <p><a href="are-you-sure">Reject application</a></p>
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
