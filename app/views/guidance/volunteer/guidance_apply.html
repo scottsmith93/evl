@@ -175,13 +175,18 @@
       <h2 class="gem-c-contents-list__title">Contents</h2>
 
     <ol class="gem-c-contents-list__list">
+
+      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+        <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 5" data-track-label="/carers-allowance/further-information" data-track-options='{"dimension29":"Report a change in circumstances"}' href="guidance_overview">Overview</a>
+
+      </li>
         <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
           <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 5" data-track-label="/carers-allowance/further-information" data-track-options='{"dimension29":"Report a change in circumstances"}' href="guidance_how-it-works">How it works</a>
 
 
         </li>
         <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="/carers-allowance/if-youre-working-" data-track-options='{"dimension29":"If you’re working "}' href="guidance_who-can-volunteer.html">Who can volunteer</a>
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="/carers-allowance/if-youre-working-" data-track-options='{"dimension29":"If you’re working "}' href="guidance_who-can-volunteer.html">Who can become an emergency volunteer</a>
 
 
         </li>
@@ -191,7 +196,7 @@
 
         </li>
         <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="/carers-allowance/if-youre-working-" data-track-options='{"dimension29":"If you’re working "}' href="guidance_if-youre-unemployed-or-retired">If you’re un-employed or retired</a>
+          <a class="gem-c-contents-list__link govuk-link " data-track-category="contentsClicked" data-track-action="content_item 6" data-track-label="/carers-allowance/if-youre-working-" data-track-options='{"dimension29":"If you’re working "}' href="guidance_if-youre-unemployed-or-retired">If you’re not working or retired</a>
 
         </li>
       </li>
@@ -214,10 +219,33 @@
 
 <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak">
   <br>
-  <h2 id="who-can-volunteer"> Apply for a certificate to join the Emergency Volunteering Scheme
+  <h2 id="who-can-volunteer">Apply for a certificate to take part in the Emergency Volunteering Scheme
+
   </h2>
-  <p>Is there we will have the link to go to the <a href="/app/views/v1-1/volunteer/start">start page</a> for our prototype?</p>  
-   
+<p>You can use this service to apply for an Emergency Volunteer certificate and help your local health, community and social care services. You will require a certificate to receive compensation.</p>
+
+      <p>If you’re employed, you will need the certificate to claim income loss compensation and evidence to your employer. If you’re unemployed, you will need the certificate to claim expenses.</p>
+
+      <p>Registering takes around 5 minutes. You can only use this service once.</p>
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      {{ govukButton({
+        text: "Start now",
+        href: "#",
+        isStartButton: true
+      }) }}
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You will need:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>to know about a volunteering placement within your local community</li>
+        <li>the telephone number and email of your contact for the placement</li>
+      </ul>
+      <p>Ideally, you will have a DBS certificate number from a check within the last 12 months. </p>
+      <p>There is revised guidance on new DBS checks within the guidance for the Emergency Volunteering Scheme. </p>   
    
   </div>
 
