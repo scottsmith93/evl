@@ -12,46 +12,42 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-
-      <h1 class="govuk-heading-xl">Add time for week one of placement</h1>
-
-      
+      <form class="form" action="summary_two-added" method="post">
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h2 class="govuk-fieldset__heading">
-              Select all days worked more than 3 hours
-            </h2>
+        <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Did work happen during this week?
+            </h1>
           </legend>
-          <span id="citizenship-conditional-hint" class="govuk-hint">
-            Select all options that are relevant to you.
-          </span>
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                Monday
+      <!--   <span id="sign-in-hint" class="govuk-hint">
+            You’ll need an account to prove your identity and complete your Self Assessment.
+          </span> -->
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+              <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in">
+                Yes
               </label>
+              <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                At least 1 day was worked this week
+              </span>
             </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
-                Tuesday
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-2">
+                No
               </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                Wednesday
-              </label>
+              <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                No days were worked during this week
+              </span>
             </div>
           </div>
         </fieldset>
       </div>
 
-
-     <!--  <button class="govuk-button" data-module="govuk-button">Continue</button> --> 
+      <button class="govuk-button" data-module="govuk-button">Continue</button> 
 
       </form>
 

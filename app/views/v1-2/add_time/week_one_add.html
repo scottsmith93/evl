@@ -13,6 +13,8 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <form class="form" action="summary_one-added" method="post">
+
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
@@ -27,102 +29,111 @@
           </span>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+              <input class="govuk-checkboxes__input" id="monday" name="citizen" type="checkbox" value="email" data-aria-controls="monday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="monday">
                 Monday
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional">
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="monday-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  How many hours?
+                <label class="govuk-label" for="monday">
+                  How many hours did you work?
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
               </div>
-      
             </div>
+
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+              <input class="govuk-checkboxes__input" id="tuesday" name="citizen" type="checkbox" value="email" data-aria-controls="tuesday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="tuesday">
                 Tuesday
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-2">
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="tuesday-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-phone">
-                  How many hours?
+                <label class="govuk-label" for="tuesday">
+                  How many hours did you work?
                 </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
               </div>
-      
             </div>
+
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+              <input class="govuk-checkboxes__input" id="wednesday" name="citizen" type="checkbox" value="email" data-aria-controls="wednesday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="wednesday">
                 Wednesday
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="wednesday-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-text">
-                  How many hours?
+                <label class="govuk-label" for="wednesday">
+                  How many hours did you work?
                 </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
               </div>
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                  Thursday
-                </label>
-              </div>
-              <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="contact-by-text">
-                    How many hours?
-                  </label>
-                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                    Friday
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="contact-by-text">
-                      How many hours?
-                    </label>
-                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                      Saturday
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-text">
-                        How many hours?
-                      </label>
-                      <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                        Sunday
-                      </label>
-                    </div>
-                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="contact-by-text">
-                          How many hours?
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
-                      </div>
-      
             </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="thursday" name="citizen" type="checkbox" value="email" data-aria-controls="thursday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="thursday">
+                Thursday
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="thursday-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="thursday">
+                  How many hours did you work?
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="friday" name="citizen" type="checkbox" value="email" data-aria-controls="friday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="friday">
+                Friday
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="friday-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="friday">
+                  How many hours did you work?
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="saturday" name="citizen" type="checkbox" value="email" data-aria-controls="saturday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="saturday">
+                Saturday
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="saturday-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="saturday">
+                  How many hours did you work?
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="sunday" name="citizen" type="checkbox" value="email" data-aria-controls="sunday-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="sunday">
+                Sunday
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="sunday-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="sunday">
+                  How many hours did you work?
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+            </div>
+           
+          
           </div>
         </fieldset>
       </div>
@@ -130,7 +141,7 @@
       
 
 
-     <!--  <button class="govuk-button" data-module="govuk-button">Continue</button> --> 
+    <button class="govuk-button" data-module="govuk-button">Continue</button> 
 
       </form>
 
