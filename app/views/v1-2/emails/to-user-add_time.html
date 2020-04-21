@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index">Back</a>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+
+      <p><strong>Email title: Emergency Volunteering Scheme complete</strong></p>
+
+      <p>"Dear [Named contact from here],</p>
+      
+      <p>[Name of volunteer from here] has completed their [placement lenght] volunteer placement with you.</p>
+      
+      <p>You need to provide us with information about the days worked during the placement.</p>
+      
+      <p>Once this is completed, the volunteer will be able to confirm this is information is correct and allow them to receive compensation, if they're eligible.</p>
+
+      <p>Please review the application by clicking the link below:</p>
+      
+      <p><a href="#">www.gov.uk/URL/displayed/here</a></p>
+      
+      
+          <br><p>Emergency Volunteering Scheme</p>
+      
+      
+
+    </div>
+  </div>
+{% endblock %}
