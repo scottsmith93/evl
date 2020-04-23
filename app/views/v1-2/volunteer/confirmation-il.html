@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Application complete</h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+
+ <!--  <p>
+        We've sent you a confirmation email which contains your reference number.
+      </p> --> 
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>The contact for placement will be emailed a link to verify your application. You may want to check they have received the email if you hope to start your placement within the next 7 days.</p>
+      <p>Your local authority or health authority will then approve the application, this is required to receive compensation.</p>
+     
+      <h2 class="govuk-heading-m">Compensation</h2>
+      <p>You may be eligible for income loss compensation based on national minimum wage.</p>
+      <p>We'll notify you once your contact for your placement has confirmed your volunteering hours.</p>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
