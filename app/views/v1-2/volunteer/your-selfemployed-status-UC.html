@@ -20,28 +20,31 @@
 
     <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Have you received Universal Credit?
+        Are you receiving income from other sources?
       </h1>
     </legend>
+    <span id="changed-name-hint" class="govuk-hint">
+      Confirm if you are receiving or have received income from the following:
+    </span>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employed" name="employed" type="radio" value="employed-status" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="employed" name="employed" type="radio" value="location" onclick="setLocation(this);">
         <label class="govuk-label govuk-radios__label" for="employed">
-          Yes
+          Universal Credit
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="self-employed" name="self-employed" type="radio" value="scotland" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="self-employed" name="self-employed" type="radio" value="location" onclick="setLocation(this);">
         <label class="govuk-label govuk-radios__label" for="self-employed">
-          No
+          The 80% government
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="unemployed" name="unemployed" type="radio" value="wales" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="unemployed" name="unemployed" type="radio" value="location" onclick="setLocation(this);">
         <label class="govuk-label govuk-radios__label" for="unemployed">
-          Unemployed, retired or a student
+          Neither
         </label>
       </div>
       

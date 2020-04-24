@@ -22,7 +22,7 @@
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        What is your employement status?
+        What is your current job status?
       </h1>
     </legend>
     <div class="govuk-radios">
@@ -39,9 +39,12 @@
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="unemployed" name="employed-q" type="radio" value="location" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="unemployed" name="employed-q" type="radio" value="location" onclick="setLocation(this);" aria-describedby="unemployment-hint">
         <label class="govuk-label govuk-radios__label" for="unemployed">
-          Unemployed, retired or a student
+          Unemployed
+          <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+            Not working, retired or a student
+            </span> 
         </label>
       </div>
       
