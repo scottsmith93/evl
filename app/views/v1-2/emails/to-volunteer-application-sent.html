@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Certificate
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index">Back</a>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+
+      <p><strong>Email Title: “Emergency Volunteering Leave certificate" <strong></p>
+
+      <p>To [volunteer name]</p>
+      <p>Thank you for applying for an Emergency Placement certificate.</p>
+      
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>The contact for your placement will receive a link to verify your application. You may want to check that the health and social care provider received the email if you hope to start your placement within the next 7 days. Your local authority or health authority will then approve the application, this is required for you to receive compensation.</p>
+      <p>You can start your placement once you have received the certificate.      </p>
+      <p>You may want to check they have received the email if you hope to start your placement within the next 7 days.</p>
+
+      <h2 class="govuk-heading-m">Your volunteering account</h2>
+      <p>You can view the status of your application, or apply for compensation at the end of your placement by logging in to the system here:</p>
+      <p><a href="https://dev.services.nhsbsa.nhs.uk/apply-for-emergency-volunteering-scheme/login"></a></p>
+      <p>Emergency Placement Scheme</p>
+    </div>
+  </div>
+{% endblock %}

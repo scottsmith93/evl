@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="your-details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form method="post">
+
+      
+
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        What is your current job status?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="employed" name="employed-q" type="radio" value="your-employed-status" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="employed">
+          Employed
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="self-employed" name="employed-q" type="radio" value="your-selfemployed-status" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="self-employed">
+          Self employed
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="unemployed" name="employed-q" type="radio" value="location" onclick="setLocation(this);" aria-describedby="unemployment-hint">
+        <label class="govuk-label govuk-radios__label" for="unemployed">
+          Unemployed
+          <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+            Not working, retired or a student
+            </span> 
+        </label>
+      </div>
+      
+    </div>
+  </fieldset>
+</div>
+
+        <button class="govuk-button" type=submit >Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    function setLocation(element) {
+            document.forms[0].action = element.value
+    }
+  </script>
+
+{% endblock %}

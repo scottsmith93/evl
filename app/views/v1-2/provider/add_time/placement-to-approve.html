@@ -12,16 +12,63 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-xl">Check your answers before requesting compensation</h1>
+      <h1 class="govuk-heading-xl">Volunteer placement details</h1>
+      <form action="confirmation" method="post" novalidate>
 
+      <div class="govuk-inset-text">
+        You need to review this volunteers request to volunteer for you
+        <input type="hidden" name="answers-checked" value="true">
+<p></p>
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Review information
+        </button>
+      </div>
 
+       
+
+      </form>
+
+<h2 class="govuk-heading-m">Volunteer details</h2>
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Compensation amount 
+            Name
           </dt>
           <dd class="govuk-summary-list__value">
-           £610.35
+           Dave Marshall
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              
+              <span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+           36 Crighton
+           <br>Birtley
+           <br>Washington
+           <br>Tyne and Wear
+           <br>NE6 5AJ
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              
+              <span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Contact details
+          </dt>
+          <dd class="govuk-summary-list__value">
+           scttsmth93@gmail.com
+           <br>07792856509
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -32,15 +79,15 @@
         </div>
         </dl>
 
-        <h2 class="govuk-heading-m">Your payment details</h2>
+        <h2 class="govuk-heading-m">Provider details</h2>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Name on the account
+            Name on organisation
           </dt>
           <dd class="govuk-summary-list__value">
-            Scott Smith
+            The Willows
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -52,29 +99,53 @@
    
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-           Sort code
+           Named contact
           </dt>
           <dd class="govuk-summary-list__value">
-            60-92-23
+            Sarah Carer
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
-              Change
               <span class="govuk-visually-hidden">national insurance number</span>
             </a>
           </dd>
         </div>
-        
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Account number ending in
+            Email address
           </dt>
           <dd class="govuk-summary-list__value">
-           6069
+           sarahcarer@carehome.co.uk
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
-              Change
+              
+              <span class="govuk-visually-hidden"> contact information</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Placement length
+          </dt>
+          <dd class="govuk-summary-list__value">
+           4 weeks
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              <span class="govuk-visually-hidden"> contact information</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Planned start date
+          </dt>
+          <dd class="govuk-summary-list__value">
+           14 May 2020
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
               <span class="govuk-visually-hidden"> contact information</span>
             </a>
           </dd>
@@ -83,19 +154,27 @@
 
       
 
-      <h2 class="govuk-heading-m">Now send your payment information</h2>
+      <h2 class="govuk-heading-m">The authorising authority status:
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           Authorising authority status
+          </dt>
+          <dd class="govuk-summary-list__value">
+           Pening
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              
+              <span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+       
+      
+        </dl>
 
-      <p></p>
-
-      <form action="confirmation" method="post" novalidate>
-
-        <input type="hidden" name="answers-checked" value="true">
-
-        <button type="submit" class="govuk-button" data-module="govuk-button">
-          Accept and send
-        </button>
-
-      </form>
+     
 
     </div>
   </div>

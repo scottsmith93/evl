@@ -22,31 +22,44 @@
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        What is your current job status?
+        What is your current employment status?
       </h1>
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="employed" name="employed-q" type="radio" value="your-employed-status" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="employed" name="employed-q" type="radio" value="is-your-employer-paying-you" onclick="setLocation(this);">
         <label class="govuk-label govuk-radios__label" for="employed">
-          Employed
+          Working
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="self-employed" name="employed-q" type="radio" value="your-selfemployed-status" onclick="setLocation(this);">
+        <input class="govuk-radios__input" id="self-employed" name="employed-q" type="radio" value="is-your-employer-paying-you" onclick="setLocation(this);">
         <label class="govuk-label govuk-radios__label" for="self-employed">
-          Self employed
+          Working and on furlough
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="unemployed" name="employed-q" type="radio" value="location" onclick="setLocation(this);" aria-describedby="unemployment-hint">
-        <label class="govuk-label govuk-radios__label" for="unemployed">
-          Unemployed
-          <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
-            Not working, retired or a student
-            </span> 
+        <input class="govuk-radios__input" id="self-employed" name="employed-q" type="radio" value="location" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="self-employed">
+          Self-employed and working
         </label>
       </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="self-employed" name="employed-q" type="radio" value="are-you-receiving-income-from-other-sources" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="self-employed">
+          Self-employed, not working
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="are-you-receiving-income-from-other-sources" onclick="setLocation(this);" aria-describedby="sign-in-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+          Not working
+        </label>
+        <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+          Unemployed, retired or student
+        </span>
+      </div>
+    
       
     </div>
   </fieldset>

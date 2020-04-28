@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="your-employment">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form method="post">
+
+      
+
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Will you be paid by your employer during your time on furlough?
+      </h1>
+    </legend>
+
+    <div class="govuk-inset-text">
+      If you know you are going to be furloughed for a month or two, we suggest you do not continue using this service.
+    </div>
+
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="employed" name="employed" type="radio" value="location" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="employed">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="self-employed" name="self-employed" type="radio" value="location" onclick="setLocation(this);">
+        <label class="govuk-label govuk-radios__label" for="self-employed">
+          No
+        </label>
+      </div>
+      
+    </div>
+  </fieldset>
+</div>
+
+        <button class="govuk-button" type=submit >Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    function setLocation(element) {
+            document.forms[0].action = element.value
+    }
+  </script>
+
+{% endblock %}
