@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="view-info-1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">Manage volunteering placements </h1>
+
+    <p>You can use this dashboard to review volunteer applications for the Emergency Volunteering Scheme and confirm when volunteer placements are completed.</p>
+    <table class="govuk-table">
+      <caption class="govuk-table__caption">Volunteers</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Start date</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Placement length</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Your approval</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Authority approval</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="ft-or-pt">Scott Smith</a></td>
+          <td class="govuk-table__cell">01 Apr 2020</td>
+          <td class="govuk-table__cell">4 weeks</td>
+          <td class="govuk-table__cell">Approved</td>
+          <td class="govuk-table__cell">Approved</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="#">Scott Smith</a></td>
+          <td class="govuk-table__cell">01 Apr 2020</td>
+          <td class="govuk-table__cell">4 weeks</td>
+          <td class="govuk-table__cell">Approved</td>
+          <td class="govuk-table__cell">Approved</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="#">Scott Smith</a></td>
+          <td class="govuk-table__cell">01 Apr 2020</td>
+          <td class="govuk-table__cell">4 weeks</td>
+          <td class="govuk-table__cell">Approved</td>
+          <td class="govuk-table__cell">Approved</td>
+        </tr>
+       
+      </tbody>
+    </table>
+
+
+<!--    <form class="form" action="days-worked">
+
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form> -->
+
+  </div>
+</div>
+
+
+{% endblock %}
