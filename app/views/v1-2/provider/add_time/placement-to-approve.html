@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="location">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-xl">Check your answers before requesting compensation</h1>
+
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Compensation amount 
+          </dt>
+          <dd class="govuk-summary-list__value">
+           £610.35
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              
+              <span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Your payment details</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name on the account
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Scott Smith
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden">national insurance number</span>
+            </a>
+          </dd>
+        </div>
+   
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+           Sort code
+          </dt>
+          <dd class="govuk-summary-list__value">
+            60-92-23
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden">national insurance number</span>
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Account number ending in
+          </dt>
+          <dd class="govuk-summary-list__value">
+           6069
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> contact information</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      
+
+      <h2 class="govuk-heading-m">Now send your payment information</h2>
+
+      <p></p>
+
+      <form action="confirmation" method="post" novalidate>
+
+        <input type="hidden" name="answers-checked" value="true">
+
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Accept and send
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
