@@ -28,12 +28,12 @@
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
           <a class="govuk-tabs__tab" href="#past-day">
-            Active volunteers
+            Active placements
           </a>
         </li>
         <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#past-week">
-            Awaiting Approval
+            Applications awaiting approval
           </a>
         </li>
         <li class="govuk-tabs__list-item">
@@ -41,97 +41,113 @@
             Completed Placements
           </a>
         </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#past-year">
-            Past year
-          </a>
-        </li>
+       
       </ul>
       <div class="govuk-tabs__panel" id="past-day">
-        <h2 class="govuk-heading-l">Past day</h2>
+        <h2 class="govuk-heading-l">Active placements</h2>
+        <p>When a volunteer completes their placement, you need to provide information about how many days they worked</p>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Case manager</th>
-              <th scope="col" class="govuk-table__header">Cases opened</th>
-              <th scope="col" class="govuk-table__header">Cases closed</th>
+              <th scope="col" class="govuk-table__header">Volunteer name</th>
+              <th scope="col" class="govuk-table__header">Placement length</th>
+              <th scope="col" class="govuk-table__header">End date</th>
+              <th scope="col" class="govuk-table__header">Action</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">David Francis</td>
-              <td class="govuk-table__cell">3</td>
-              <td class="govuk-table__cell">0</td>
+              <td class="govuk-table__cell"><a href="#">Scott Smith</a></td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">28 April 2020</td>
+              <td class="govuk-table__cell"><a href="#">Add days worked</a></td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Paul Farmer</td>
-              <td class="govuk-table__cell">1</td>
-              <td class="govuk-table__cell">0</td>
+              <td class="govuk-table__cell"><a href="#">Kirste Worland</a></td>
+              <td class="govuk-table__cell">2 weeks</td>
+              <td class="govuk-table__cell">13 May 2020</td>
+              <td class="govuk-table__cell">No action required</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Rita Patel</td>
-              <td class="govuk-table__cell">2</td>
-              <td class="govuk-table__cell">0</td>
+              <td class="govuk-table__cell"><a href="#">Andrew Arrowsmith</a></td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">20 May 2020</td>
+              <td class="govuk-table__cell">No action required</td>
             </tr>
           </tbody>
         </table>
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
-        <h2 class="govuk-heading-l">Past week</h2>
+        <h2 class="govuk-heading-l">Applications awaiting approval</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Case manager</th>
-              <th scope="col" class="govuk-table__header">Cases opened</th>
-              <th scope="col" class="govuk-table__header">Cases closed</th>
+              <th scope="col" class="govuk-table__header">Volunteer name</th>
+              <th scope="col" class="govuk-table__header">Placement length</th>
+              <th scope="col" class="govuk-table__header">Planned start date</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+
+
+
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">David Francis</td>
-              <td class="govuk-table__cell">24</td>
-              <td class="govuk-table__cell">18</td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">20 May 2020</td>
+              <td class="govuk-table__cell"><a href="#">Review application</a></td>
+
+              
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Paul Farmer</td>
-              <td class="govuk-table__cell">16</td>
-              <td class="govuk-table__cell">20</td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">27 May 2020</td>
+              <td class="govuk-table__cell">Pending authority review</td>
+
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Rita Patel</td>
-              <td class="govuk-table__cell">24</td>
-              <td class="govuk-table__cell">27</td>
+              <td class="govuk-table__cell">3 weeks</td>
+              <td class="govuk-table__cell">27 May 2020</td>
+              <td class="govuk-table__cell">Pending authority review</td>
+
             </tr>
           </tbody>
         </table>
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
-        <h2 class="govuk-heading-l">Past month</h2>
+        <h2 class="govuk-heading-l">Completed placements</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Case manager</th>
-              <th scope="col" class="govuk-table__header">Cases opened</th>
-              <th scope="col" class="govuk-table__header">Cases closed</th>
+              <th scope="col" class="govuk-table__header">Volunteer name</th>
+              <th scope="col" class="govuk-table__header">Placement length</th>
+              <th scope="col" class="govuk-table__header">Start date</th>
+              <th scope="col" class="govuk-table__header">End date</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">David Francis</td>
-              <td class="govuk-table__cell">98</td>
-              <td class="govuk-table__cell">95</td>
+              <td class="govuk-table__cell">Chris Hewitson</td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">28 March 2020</td>
+              <td class="govuk-table__cell">16 April 2020</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Paul Farmer</td>
-              <td class="govuk-table__cell">122</td>
-              <td class="govuk-table__cell">131</td>
+              <td class="govuk-table__cell">Patti Winter</td>
+              <td class="govuk-table__cell">2 weeks</td>
+              <td class="govuk-table__cell">27 April 2020</td>
+              <td class="govuk-table__cell">9 April 2020</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Rita Patel</td>
-              <td class="govuk-table__cell">126</td>
-              <td class="govuk-table__cell">142</td>
+              <td class="govuk-table__cell">Sarah Stokes</td>
+              <td class="govuk-table__cell">4 weeks</td>
+              <td class="govuk-table__cell">11 March 2020</td>
+              <td class="govuk-table__cell">9 April 2020</td>
             </tr>
           </tbody>
         </table>
