@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="view-info-1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+   <h1 class="govuk-heading-xl">Volunteer Search</h1> 
+
+  </div>
+</div>
+<hr>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          First name
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Surname
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+  </div>
+    
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Nation Insurance Number
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+  </div>
+<hr>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" action="results" method="post">
+
+      <button class="govuk-button" data-module="govuk-button">Search</button>
+<p><a href="#">Clear</a></p>
+    </form>
+    </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Search results</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+              <th scope="col" class="govuk-table__header app-custom-class">NINO</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Postcode</th>
+              <th scope="col" class="govuk-table__header app-custom-class">Email</th>
+
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="volunteer">Scott Smith</a></td>
+              <td class="govuk-table__cell">JX012401A</td>
+              <td class="govuk-table__cell">NE38 0LB</td>
+              <td class="govuk-table__cell">scottsmith@email.com</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="volunteer">Andrew Arrowsmith</a></td>
+              <td class="govuk-table__cell">BM98K19A</td>
+              <td class="govuk-table__cell">NE39 DLQ</td>
+              <td class="govuk-table__cell">andrew@email.com</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="volunteer">Patti Winter</a></td>
+              <td class="govuk-table__cell">JX0032D2W</td>
+              <td class="govuk-table__cell">NE21 DWR</td>
+              <td class="govuk-table__cell">patti@email.com</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        </div>
+
+
+
+<!--    <form class="form" action="days-worked">
+
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form> -->
+
+
+
+
+
+{% endblock %}

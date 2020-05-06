@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="view-info-1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+   <h1 class="govuk-heading-xl">Volunteer Search</h1> 
+
+  </div>
+</div>
+<hr>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          First name
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Surname
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+  </div>
+    
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Nation Insurance Number
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-10" name="width-10" type="text">
+      </div>
+    </div>
+  </div>
+<hr>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" action="results" method="post">
+
+      <button class="govuk-button" data-module="govuk-button">Search</button>
+<p><a href="#">Clear</a></p>
+    </form>
+    </div>
+    </div>
+
+
+
+<!--    <form class="form" action="days-worked">
+
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form> -->
+
+
+
+
+
+{% endblock %}
